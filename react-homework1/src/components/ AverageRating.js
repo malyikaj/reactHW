@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function  AverageRating() {
-    return (
-        <div className="rating">
-            <h1>Average Rating</h1>
-        </div>
-    )
+class AverageRating extends React.Component {
+  render(){
+      return(
+    <div>
+      <h3>Average Rating</h3>
+      <h2>{this.props.rating}</h2>
+      
+    </div>
+  )
+}
 }
 
-export default  AverageRating
+export default AverageRating;

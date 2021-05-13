@@ -1,17 +1,16 @@
-import React from "react"
+import React from 'react';
 
 const Sidebar = () => {
-    return(
-        <div>
-            <p>Sidebar:</p>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-        </div>
-        
-    );
-}
+  return (
+    <div>
+      <button className="btn">Dashboard</button>
+      <button className="btn">Widget</button>
+      <button className="btn">Reviews</button>
+      <button className="btn">Customers</button>
+      <button className="btn">Online Analysis</button>
+      <button className="btn">Settings</button>
+    </div>
+  );
+};
 
-export default Sidebar
+export default Sidebar;
