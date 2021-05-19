@@ -1,6 +1,6 @@
 import React from 'react'
 
-class InputList extends React.Component {
+class Inputs extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -22,7 +22,6 @@ class InputList extends React.Component {
     render() {
         return (    
                 <div className="inputlist">
-                    <h3>Add Items:</h3>
                     <form onSubmit= {(event) => this.props.handleSubmit(this.state, event)}>
                         <label for="item">Item:
                             <input type="text" name="item" value={this.state.item} onChange={this.handleChange}/>
@@ -44,5 +43,4 @@ class InputList extends React.Component {
 
 }
 
-
-export default InputList
+export default Inputs

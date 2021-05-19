@@ -1,11 +1,12 @@
 import './App.css';
-import Groceries  from './groceries'
+import Groceries  from './components/Groceries'
+
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Grocery List App</h1>
+      <h1>Grocery List</h1>
       <Groceries/>
     </div>
   );

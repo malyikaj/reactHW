@@ -1,8 +1,9 @@
 import React from 'react'
-import groceries from './StartGroceries';
-import AddToList from './InputList';
+import groceries from './GroceryList';
+import Inputs from './Inputs';
 import DisplayList from './displaylist';
-import PurchasedList from './Purchasedlist.js';
+import Bought from './Bought';
+
 
 
 class Groceries extends React.Component{
@@ -51,9 +52,9 @@ class Groceries extends React.Component{
     render() {
         return(
         <div>
-            <AddToList submit={this.submit}/>
+            <Inputs submit={this.submit}/>
             <DisplayList groceries={this.state.groceries} togglePurchased={this.togglePurchased} decrement={this.decrement}/>
-            <PurchasedList groceries={this.state.groceries}/>
+            <Bought groceries={this.state.groceries}/>
         </div>
         );
     }

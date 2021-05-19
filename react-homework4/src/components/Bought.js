@@ -1,6 +1,6 @@
 import React from 'react'
 
-class PurchasedList extends React.Component{
+class Bought extends React.Component{
 
     state = {list : []}
 
@@ -15,7 +15,6 @@ class PurchasedList extends React.Component{
     render() {
         return (
             <div>
-                <h3>Update Cart:</h3>
                 <button onClick={this.handleUpdate}>UPDATE CART</button>
                 {this.state.list.map((grocery,index) => <li key={index}>Purchased Item: {grocery.item}, Quantitiy: {grocery.quantity}, Units: {grocery.units} </li>)}
             </div>
@@ -24,4 +23,4 @@ class PurchasedList extends React.Component{
 }
 
 
-export default PurchasedList;
+export default Bought;
