@@ -1,0 +1,63 @@
+.grocerylist, .inputlist, .App {
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  align-items: center;
+  background-size: 100vh;
+  opacity: 0.9;
+  background: #e8e7e7; 
+  margin: 10px;
+}
+
+h1 {
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #8063FA;
+}
+
+button {
+  background: white;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10%;
+}
+
+button:hover {
+  background: #83D97C;
+}
+
+#submit-btn:hover {
+  background: #83D97C;
+}
+
+#submit-btn {
+  size: 10px;
+  background: white;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10%;
+}
+
+.grocery-list {
+  margin: 10px;
+  background-color: #8063FA;
+  box-shadow: 0 2px 0 rgb(133, 104, 250);
+}
+
+.inputlist {
+  background-color: #8063FA;
+  margin: 10px;
+  padding: 10px;
+}

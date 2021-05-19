@@ -1,0 +1,60 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr) ;
+  grid-template-rows: 100px; 
+  grid-gap: 10px;
+  grid-template-areas: 
+    "list reviews analysis visitors"
+    "list reviews analysis visitors"
+    "list rating rating rating" 
+    "list rating rating rating";
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(110,133,156,0.12);
+  padding: 0.85em;
+  border: solid 1px rgba(110,133,156,0.15);
+}
+
+.reviews {
+  grid-area: reviews;
+  border: 1px solid black;
+  background-color: #fbaea8;
+}
+
+.visitors {
+ grid-area: visitors;
+ background-color: #6e859c;
+ border: 1px solid black;
+}
+
+.analysis {
+  grid-area: analysis;
+  background-color: #aad2ed;
+  border: 1px solid black;
+
+}
+
+.rating {
+ grid-area: rating;
+ background-color: #6ad78a;
+ border: 1px solid black;
+}
+
+.list {
+  grid-area: list; 
+  background-color: #3f8abf;
+  border: 1px solid black;
+}
+
+body {
+	font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+

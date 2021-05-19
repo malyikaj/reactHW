@@ -1,30 +1,21 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 
 const players = [
   {
-   items: '',
-   units: '',
-   quantity: 0,
-   isPurchased: false
+   name: "Guil",
+   score: 50
  },
  {
-  items: '',
-  units: '',
-  quantity: 0,
-  isPurchased: false
+   name: "Treasure",
+   score: 85
  },
  {
-  items: '',
-  units: '',
-  quantity: 0,
-  isPurchased: false
+   name: "Ashley",
+   score: 95
  },
  {
-  items: '',
-  units: '',
-  quantity: 0,
-  isPurchased: false
+   name: "James",
+   score: 80
  }
 ];
 
@@ -33,7 +24,7 @@ const Header = (props) => {
  return (
    <header>
      <h1>{ props.title }</h1>
-     <span className = "stats">Items: { props.totalPlayers }</span>
+     <span className = "stats">Items:</span>
    </header>
  );
 }
@@ -72,16 +63,10 @@ const App = () => {
      {/* Player list*/}
      <Player name ="Milk" score={1} />
      <Player name ="Eggs" score={2} />
-     <Player name ="Bread" score={3} />
-     <Player name ="Water" score={4} />
+     <Player name ="Bread" score={1} />
+     <Player name ="Butter" score={1} />
    </div>
  );
 }
-
-// ReactDOM.render(
-//  <App initializePlayers={players}/>,
-//  <Player />,
-//  document.getElementById('root')
-// );
 
 export default App;

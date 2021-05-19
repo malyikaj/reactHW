@@ -1,22 +1,25 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 
 const players = [
   {
    name: "Guil",
-   score: 50
+   score: 50,
+   id: 1
  },
  {
    name: "Treasure",
-   score: 85
+   score: 85,
+   id: 2
  },
  {
    name: "Ashley",
-   score: 95
+   score: 95,
+   id: 3
  },
  {
    name: "James",
-   score: 80
+   score: 80,
+   id: 4
  }
 ];
 
@@ -53,27 +56,25 @@ const Counter = (props) => {
  );
 }
 
-const App = () => {
+const App = (props) => {
  return (
    <div className ="scoreboard">
      <Header 
         title="Scoreboard" 
-        totalPlayers={1}
+        totalPlayers={props.initialPlayers.length}
         />
 
      {/* Player list*/}
-     <Player name ="Malyika" score={50} />
-     <Player name ="Treasure" score={90} />
-     <Player name ="Guil" score={85} />
-     <Player name ="James" score={25} />
+     {props.initialPlayers.map( player =>
+      <Player
+        name={player.name}
+        score={player.score}
+        key={player.id.toString()}
+      />
+     )}
    </div>
  );
 }
 
-// ReactDOM.render(
-//  <App initializePlayers={players}/>,
-//  <Player />,
-//  document.getElementById('root')
-// );
 
 export default App;
