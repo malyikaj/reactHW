@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
 }
+
 body {
   background-color:#47596b;  
   color: white;
@@ -8,41 +9,64 @@ body {
 }
 
 .title{
-  text-transform: uppercase;
-  font-family: Helvetica, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: bold;
-  height: 2em;
-  text-shadow: rgb(240, 176, 37) 1px 1px;
+  height: 50px;
+
 }
 
 .app{
   text-align: center;
 }
 
-.clueData{
+.questionData{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 #dec{
-  background: #EF5350;
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 12px 28px;
+  color: #FFF;
+  background-color: #EF5350;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #EF5350;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
 }
 
 #inc{
-  background: #83D97C;
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 12px 28px;
+  color: #FFF;
+  background-color: #83D97C;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #83D97C;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
 }
 
 #reset{
-  background-color: #555555;
   color: white;
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 12px 28px;
+  border-radius: 2px;
+  background-color: #555555;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #383838;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
 }
 
 .getclue_btn{
@@ -54,11 +78,48 @@ body {
   background-color: #24d1fc;
   border-radius: 12px;
   padding: 10px 20px;
+  color: white;
+  border-radius: 2px;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #24d1fc;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
 }
 
 .Answer{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: bold;
+  color: #83D97C;
 }
+
+h3{
+  color:#F4D03F;
+}
+
+.trivia_button{
+  background-color: #F4D03F;
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 2px;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #F4D03F;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+.points2 {
+  color: #F4D03F;
+}
+/* .score{
+  justify-content:space-evenly; 
+} */
+

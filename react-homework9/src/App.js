@@ -1,5 +1,5 @@
 import React from 'react'
-import Score from './component/Score'
+import ScoreTotal from './component/Score'
 import './App.css'
 
 class App extends React.Component {
@@ -12,7 +12,9 @@ class App extends React.Component {
 		isShown: false
 	}
 
-	hint = () => {
+
+	
+	question = () => {
 
 		const url = 'http://jservice.io/api/random'
 
@@ -21,40 +23,55 @@ class App extends React.Component {
 				return res.json();
 			})
 			.then((data) => {
-				const clueData = data[0];
-				console.log(clueData); 
+				const questionData = data[0];
+				console.log(questionData); 
 				this.setState({
-					category: clueData.category.title,
-					points: clueData.value,
-					clue: clueData.question,
-					answer: clueData.answer,
+					category: questionData.category.title,
+					points: questionData.value,
+					clue: questionData.question,
+					answer: questionData.answer,
 					//isShown: false
 				});
 			});
 	}
 
+
+
 	displayAnswer = () => { 
 		this.setState({isShown: !this.state.isShown});
 	}
+
+
 
 	render() {
 		return (
 			<div className='app'>
 				<h1 className='title'> Welcome to Jeopardy!</h1>
-				<Score title="Score" value={this.state.score} points= {this.state.points}/>
+				<ScoreTotal title="Score" value={this.state.score} points= {this.state.points}/>
+
 				<h2>Let's play!</h2>
 
-				<button className="hint_btn" onClick={this.hint}>Trivia Question:</button>
+				<button className="trivia_button" onClick={this.question}>Press for Trivia Question</button>
 
-				<div className = "clueData">
-				<div className="category">Category: {this.state.category}</div>
-				<div className="points">Points: {this.state.points} </div>
-				<div className="clue">Question: {this.state.clue} </div>
+				<div className = "questionData">
+				<div className="category">Category : {this.state.category}</div>
+
+				<br></br>
+
+				<div className="points">Worth : </div>
+				<div className="points2">{this.state.points} Points </div>
+
+				<br></br>
+
+				<div className="question">Question : {this.state.clue} </div>
+
 				</div>
 				<button id="reveal" onClick={this.displayAnswer}>Reveal Answer </button>
-				{this.state.isShown? <p className="Answer"> Answer: {this.state.answer}</p>: null}
+				{this.state.isShown? <p className="Answer"> Answer : {this.state.answer}</p>: null}
 			</div>
 			)
 	}
 }
+
+
 export default App;
