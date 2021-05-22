@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import Success from './Success'
-import Fail from './Fail'
+import GreenLight from './greenlight'
+import TrapDoor from './trapdoor'
 
 
 function Login() {
     
-    const user = "MichaelAttia"
-    const password = "Pass9393"
+    const user = "User"
+    const password = "Password"
 
   
     const [username, setUserName] = useState("")
@@ -17,38 +17,38 @@ function Login() {
 
 
 
-    function handleLogin(event) {
+    function loginEvent(event) {
         
         event.preventDefault()
         
         if (username === user && pass === password) {
-            setLogin(<Success user={user} />)
+            setLogin(<GreenLight user={user} />)
         } else {
-            setLogin(<Fail />)
+            setLogin(<TrapDoor />)
         }
     }
     
-    const handle1 = (event) => setUserName(event.target.value)
-    const handle2 = (event) => setPassword(event.target.value)
+    const login1 = (event) => setUserName(event.target.value)
+    const login2 = (event) => setPassword(event.target.value)
 
     return (
 
         <div >
 
-            <form onSubmit={handleLogin}>
+            <form onSubmit={loginEvent}>
         
                 <div>
                     <label>
-        <input id="username" type='text' placeholder="User Name" onChange={handle1}></input>
+        <input id="username" type='text' placeholder="User Name" onChange={login1}></input>
                     </label>
                 </div>
 
                 <label>
-            <input id="password" type='passowrd' placeholder="Password" onChange={handle2}></input>
+            <input id="password" type='passowrd' placeholder="Password" onChange={login2}></input>
                 </label>
 
                 <div>
-                    <button>Log In</button>
+                    <button>Sign In</button>
                 </div>
 
                 <div>{Login}</div>
