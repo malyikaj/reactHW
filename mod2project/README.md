@@ -1,70 +1,23 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mod2 Project
+Who is app is for?
+This app is a fun lighthearted app for everyone who is interested in their horoscope
+For all ages
+This app allows the user to find out their daily horoscope as well as their weekly horoscope
+It has other fun features like : mood, lucky number, color, lucky time, and compatibility sign
+My goal was to create an easy to navigate application that worked with two APIs seamlessly and unknowingly to the user
+Technical details:
+I used two APIs that utilized class, props, states, and the dot notation
+I learned about the NavLink Component. As a special version of the Link Component. It adds styling attributes to the rendered element when it matches the current URL.
+I found it handy when I changed the color of the tabs when clicked
+There's always multiple ways to solve a problem in code I notice
+Using “exact to” was also helpful to make sure my highlight didn’t stay stuck in one place
+One API had really great documentation that helped me with the other one that lacked documentation.
+With some basic logic and testing we got the other problematic API to render
+Improvements?
+I would've love to incorporate more detailed APIs and expanded to every possible horoscope need. Such as yearly, monthly, compatibility profiles between signs, videos etc.
+Highlights
+Learning what it takes to build an application under the hood gives me a new respect for many of the websites and software I use everyday
+I've learned that APIs are everywhere and in nearly everything
+They make our jobs so much easier (not so much with implementing them) but with adding a layer of abstraction to our work
+In many ways now I see how react is useful in the sense that I do feel more organized than I did typing out HTML in the early days when I first learned how to code
+I now open the floor to questions
