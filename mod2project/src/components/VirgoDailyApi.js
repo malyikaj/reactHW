@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Img from "./Aquarius.png";
+import Img from "./Virgo.png";
 
-class AquariusDailyApi extends Component {
+
+class VirgoDailyApi extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -10,7 +11,7 @@ class AquariusDailyApi extends Component {
     }
 
     componentDidMount () {
-        const URL = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today';
+        const URL = 'https://aztro.sameerkumar.website/?sign=virgo&day=today';
         fetch(URL, {
             method: 'POST'
         }).then(response => response.json())
@@ -20,9 +21,9 @@ class AquariusDailyApi extends Component {
     render() {
         return (
           <ul className="course media group">
-          <img className="course-img" src= {Img} alt="Aquarius Sign" />
+          <img className="course-img" src= {Img} alt="Virgo Sign" />
           <div>
-            <h2>Aquarius</h2>
+            <h2>Virgo</h2>
               <p><strong>{this.state.json.date_range}</strong></p>
               <p>Todays's Mood: <strong>{this.state.json.mood}</strong></p>
               <p>Today's Lucky Number: <strong>{this.state.json.lucky_number}</strong></p>
@@ -32,9 +33,10 @@ class AquariusDailyApi extends Component {
               <p>{this.state.json.description}</p> 
           </div>   
           </ul>  
+          
         );
     }
 }
 
-export default AquariusDailyApi;
+export default VirgoDailyApi;
 

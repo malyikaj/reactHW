@@ -24,13 +24,12 @@ class AriesDailyApi extends Component {
           <img className="course-img" src= {Img} alt="Aries Sign" />
           <div>
             <h2>Aries</h2>
-              {/* <h5>{this.state.json.current_date}</h5> */}
               <p><strong>{this.state.json.date_range}</strong></p>
               <p>Todays's Mood: <strong>{this.state.json.mood}</strong></p>
               <p>Today's Lucky Number: <strong>{this.state.json.lucky_number}</strong></p>
               <p>Today's Lucky Time: <strong>{this.state.json.lucky_time}</strong></p>
               <p>Your Color: <strong>{this.state.json.color}</strong></p>
-              <p>Love Compatibility: <strong>{this.state.json.compatibility}</strong></p> 
+              <p>Love Compatibility Sign: <strong>{this.state.json.compatibility}</strong></p> 
               <p>{this.state.json.description}</p> 
           </div>   
           </ul>  
