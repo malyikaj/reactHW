@@ -1,12 +1,7 @@
-/* ================================= 
-  WEB FONTS
-==================================== */
+
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 
-/* ================================= 
-  ELEMENT STYLES
-==================================== */
 
 * {
   box-sizing: border-box;
@@ -42,8 +37,6 @@ hr {
   margin: 2.3em 0 2em 0;
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
-
-/* FORM & BUTTON STYLES -------- */
 
 .home a,
 input,
@@ -95,7 +88,6 @@ header {
   margin-bottom: 1em;
 }
 
-/* IMAGES -------- */
 
 .course-img {
   width: 70px;
