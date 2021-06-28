@@ -8,7 +8,7 @@
 }
 body {
   color: #576366;
-  background: #5fcf80;
+  background: #aad2ed;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -51,16 +51,12 @@ button {
 }
 button {
   color: white;
-  background: #4188dc;
+  background: #3f8abf;
   padding-left: 1em;
   padding-right: 1em;
   cursor: pointer;
   border-color: rgba(0,0,0, .1);
 }
-
-/* ================================= 
-  LAYOUT & PAGE STYLES
-==================================== */
 
 .container {
   width: 95%;
@@ -100,7 +96,6 @@ header {
   text-align: center;
 }
 
-/* MAIN NAV -------- */
 
 .main-nav a {
   font-size: .95em;
@@ -114,10 +109,9 @@ header {
 .main-nav a:hover,
 .main-nav .active {
   color: #fff;
-  background: #3b80d1;
+  background: #6e859c;
 }
 
-/* COURSE NAV -------- */
 
 .course-nav li {
   display: inline-block;
@@ -140,11 +134,7 @@ header {
 }
 
 
-/* ================================= 
-  MEDIA QUERIES
-==================================== */
-
-@media (min-width: 0) and (max-width: 768px) { 
+@media (min-width: 0) and (max-width: 1080px) { 
   body {
     padding-top: .8em;
   }
@@ -173,7 +163,7 @@ header {
      margin-bottom: 1em;
    }
 }
-@media (min-width: 769px) {
+@media (min-width: 1080px) {
   body {
     padding-top: 3em;
   }
@@ -200,7 +190,7 @@ header {
     clear: left;
     margin-left: 0;
   }
-  /* MAIN NAV -------- */
+ 
   header,
   .main-nav {
     display: flex;
@@ -214,7 +204,7 @@ header {
   .main-nav a:hover {
     border-color: rgba(0,0,0, .1);
   }
-  /* COURSE NAV -------- */
+  
   .course-nav {
     float: right;
   } 

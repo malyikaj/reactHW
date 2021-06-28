@@ -1,10 +1,10 @@
 import React from 'react'
 
-export function Welcome(props) {
+export function Success (props) {
     return (
         <div>
             Welcome {props.user}
         </div>
     )
 }
-export default Welcome;
+export default Success;
