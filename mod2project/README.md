@@ -1,7 +1,9 @@
+<img width="1182" alt="Screen Shot 2021-05-28 at 2 26 33 AM" src="https://user-images.githubusercontent.com/62891809/119939635-298dfe00-bf5c-11eb-9741-1167af4bd626.png">
+<img width="1170" alt="Screen Shot 2021-05-28 at 2 26 42 AM" src="https://user-images.githubusercontent.com/62891809/119939651-2c88ee80-bf5c-11eb-8152-3e04fbed6b14.png">
 Mod2 Project
 Who is app is for?
 This app is a fun lighthearted app for everyone who is interested in their horoscope
-For all ages
+For all ages!
 This app allows the user to find out their daily horoscope as well as their weekly horoscope
 It has other fun features like : mood, lucky number, color, lucky time, and compatibility sign
 My goal was to create an easy to navigate application that worked with two APIs seamlessly and unknowingly to the user
