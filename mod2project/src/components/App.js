@@ -7,7 +7,6 @@ import {
  import Header from './Header';
  import Home from './Home';
  import DailyHoroscopes from './DailyHoroscopes';
- import WeeklyHoroscopes from './WeeklyHoroscopes';
  import AboutUs from './AboutUs';
 
  // <BrowserRouter> Wraps all App components. Renders the route router.
@@ -22,7 +21,6 @@ const App = () => (
       <Header />
       <Route exact path="/" component={Home} />
       <Route path="/DailyHoroscopes" component={DailyHoroscopes}/>
-      <Route path="/WeeklyHoroscopes" component={WeeklyHoroscopes} />
       <Route path="/AboutUs" component={AboutUs} />
     </div>
   </BrowserRouter>

@@ -6,7 +6,6 @@ const Header = () => (
     <ul className="main-nav">
       <li><Link exact to= "/" >Home</Link></li>
       <li><Link to= "/DailyHoroscopes" >Daily Horoscopes</Link></li>
-      <li><Link to= "/WeeklyHoroscopes" >Weekly Horoscopes</Link></li>
       <li><Link to= "/AboutUs" >About</Link></li>
     </ul>    
   </header>

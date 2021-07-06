@@ -38,25 +38,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.home a,
-input,
-button {
-  padding: .5em;
-  font-size: .9em;
-  margin-right: 10px;
-  border: none;
-  border-radius: 3px;
-  border: solid 1px #ccc;
-  outline: none;
-}
-button {
-  color: white;
-  background: #3f8abf;
-  padding-left: 1em;
-  padding-right: 1em;
-  cursor: pointer;
-  border-color: rgba(0,0,0, .1);
-}
 
 .container {
   width: 95%;
@@ -88,10 +69,7 @@ header {
 .course-img {
   width: 70px;
 }
-.teacher-img {
-  width: 100%;
-  border-radius: .3em;
-}
+
 .not-found {
   text-align: center;
 }
